@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApplicationName": {
+      "value": "CustomerAPI"
+    },
+    "Environment": {
+      "value": "dev"
+    },
+    "ProductName": {
+      "value": "Innovation"
+    },
+    "Team": {
+      "value": "ATeam"
+    },
+    "Contact": {
+      "value": "vend_mho@woodforest.com"
+    },
+    "State": {
+      "value": "Live"
+    },
+    "SkuName": {
+      "value": "F1"
+    },
+    "NumberOfWorkers": {
+      "value": 1
+    },
+    "location": {
+      "value": "southcentralus"
+    },
+    "sasURL": {
+      "value": "Value is sas token of storage account. Storage account should exist."
+    },
+    "autoScale": {
+      "value": 1
+    },
+    "autoScaleThresholdDn": {
+      "value": 60
+    },
+    "autoScaleThresholdUp": {
+      "value": 80
+    }
+  }
+}
