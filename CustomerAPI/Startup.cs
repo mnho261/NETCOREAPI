@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Cors;
+using CustomerAPI.Models;
 
 namespace CustomerAPI
 {
@@ -26,7 +27,7 @@ namespace CustomerAPI
         {
             services.AddCors();
             services.AddMvc();
-
+            services.AddTransient<ICustomerRepository, CustomerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

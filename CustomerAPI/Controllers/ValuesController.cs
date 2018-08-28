@@ -10,7 +10,14 @@ namespace CustomerAPI.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly ICustomerRepository _customerRepository;
+        #region ctor
 
+        public ValuesController(ICustomerRepository customerRepository)
+        {
+            _customerRepository = customerRepository;
+        }
+        #endregion
         #region MyRegion
         private IEnumerable<Customer> BuildCustomerList()
         {
